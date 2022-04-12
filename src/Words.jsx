@@ -14,7 +14,6 @@ export const generateWord = async ()=>{
         let newarr=wordArr.filter((word)=>word!=='')
         todayWord=newarr[Math.floor(Math.random()*newarr.length)];
         wordSet=new Set(newarr);
-        console.log(todayWord)
     }))
     return {wordSet,todayWord}
 }

@@ -50,8 +50,7 @@ function App() {
     }else{
       alert('word not found')
     }
-    console.log('currWord:',currWord)
-    console.log('correctWord:',correctWord)
+        
     if(currWord.toLowerCase() === correctWord){
       
       setGameover({gameover:true, guessedWord:true})
