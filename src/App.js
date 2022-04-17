@@ -64,11 +64,12 @@ function App() {
   return (
     <div className="App">
       <nav><h1>Wordle Clone</h1></nav>
+      <div className='game'>
       <AppContext.Provider value={{board, winner,setWinner, setBoard, currAttempt, setCurrAttempt, onSelectLetter, onDelete, onEnter,correctWord,disabledLetters,setDisabledLetters,gameover,setGameover}}>
         <Board />
         {gameover.gameover ? <GameOver /> : <Keyboard /> }
       </AppContext.Provider>
-      
+      </div>
     </div>
   );
 }
