@@ -8,9 +8,9 @@ function GameOver() {
     
     return (
         <div className='gameover'>
-            <h3>{gameover.guessedWord ? 'You correctly guessed!' : 'You failed'}</h3>
+            <h3>{gameover.guessedWord ? 'Acertaste!' : 'Fallaste'}</h3>
             <h1>Correct Word: {correctWord}</h1>
-            {gameover.guessedWord && (<h3>You guessed in {currAttempt.attempt} attempts</h3>)}
+            {gameover.guessedWord && (<h3>Lo adivinaste en {currAttempt.attempt} intentos</h3>)}
         </div>
     );
 }
