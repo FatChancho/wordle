@@ -5,7 +5,7 @@ export const boardDefault=[['','','','',''],
                            ['','','','',''],
                            ['','','','',''],
                            ['','','','',''],
-                           ['','','','','']];
+                           ['','','','','']]; 
 
 export const generateWord = async ()=>{
     let wordSet;
